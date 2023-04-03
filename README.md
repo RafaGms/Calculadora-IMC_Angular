@@ -1,27 +1,23 @@
-# CalculadoraImc
+# Calculadora - IMC
+# Link para teste: https://rafagms.github.io/Calcladora-IMC_Angular/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+O Índice de Massa Corporal, mais conhecido como IMC, é uma medida utilizada para avaliar o peso corporal de uma pessoa em relação à sua altura. O cálculo do IMC é bastante simples e pode ser feito utilizando a fórmula matemática que relaciona o peso e a altura de um indivíduo.
 
-## Development server
+A fórmula do IMC é:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+IMC = peso (kg) ÷ (altura (m))^2
 
-## Code scaffolding
+Por exemplo, se uma pessoa pesa 70 kg e tem 1,70 m de altura, o cálculo do IMC seria:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+IMC = 70 ÷ (1,70)^2
 
-## Build
+IMC = 70 ÷ 2,89
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+IMC = 24,22
 
-## Running unit tests
+O resultado final, neste caso, seria um IMC de 24,22. O IMC é geralmente classificado em categorias, como abaixo do peso, peso normal, sobrepeso e obesidade, de acordo com os seguintes intervalos:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+abaixo do peso: IMC abaixo de 18,5
+peso normal: IMC entre 18,5 e 24,9
+sobrepeso: IMC entre 25 e 29,9
+obesidade: IMC acima de 30
