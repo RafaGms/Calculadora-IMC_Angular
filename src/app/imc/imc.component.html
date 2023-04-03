@@ -1,0 +1,62 @@
+<div class="container-imc">
+  <div class="img-imc">
+    <div class="fundo"></div>
+    <img src="./assets/Sport family-pana.png" alt="imagem-exercicíos">
+  </div>
+
+  <div class="calculadora">
+    <h1>Calculadora IMC</h1>
+
+    <p class="mensagemError">{{mensagemError}}</p>
+    <div class="content-input">
+      <label for="num1">Peso em Kg</label>
+      <div class="caixa-input">
+        <input type="number" name="num1" [(ngModel)]="peso" placeholder="0">
+        <p>Kg</p>
+      </div>
+    </div>
+
+    <div class="content-input">
+      <label for="num2">Altura em metros</label>
+      <div class="caixa-input">
+        <input type="number" name="num2" [(ngModel)]="altura" placeholder="0">
+        <p>M</p>
+      </div>
+    </div>
+
+    <div class="btn-calc">
+      <button type="button" (click)="verificarInput()">Calcular</button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="resultado">
+      <div class="numero">
+        <p><span class="destaque">{{calc | number: '1.0-2'}}</span></p>
+        <p>Seu IMC</p>
+      </div>
+      <div class="mensagem-imc">
+        <p>{{mensagemTipo}}</p>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="container-mais">
+      <p>Mais informações abaixo</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-descricao">
+  <div class="container-infor">
+    <h1>O que é IMC?</h1>
+    <p>O Índice de Massa Corporal (IMC) é uma medida que relaciona o peso e a altura de uma pessoa e é amplamente
+      utilizado como indicador de saúde. Um IMC abaixo de 18,5 kg/m² é considerado magreza e pode indicar desnutrição ou
+      outros problemas de saúde. É importante lembrar que o IMC é apenas uma medida geral e não leva em consideração a
+      composição corporal individual, como massa muscular ou gordura visceral.</p>
+
+    <p [class.minha-classe]="classeAtiva"><span class="descricao">{{mensagemPessoa[index]}}</span></p>
+  </div>
+</div>
+
