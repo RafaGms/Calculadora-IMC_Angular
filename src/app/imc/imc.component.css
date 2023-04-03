@@ -1,5 +1,6 @@
+/* Style Calculadora */
 .calculadora {
-  height: 100vh;
+  height: 90vh;
   padding: 1rem;
   background-color: #232323;
   color: #dbdbdb;
@@ -77,14 +78,6 @@
   color: #dbdbdb;
 }
 
-.divider {
-  height: 1px;
-  max-width: 500px;
-  width: 100%;
-  background: #7c7c7c;
-  margin: 2rem auto;
-}
-
 .resultado {
   display: flex;
   align-items: center;
@@ -118,6 +111,61 @@
   border-radius: 0px 50px 0px 200px;
 }
 
+
+
+
+/* Style Descrição */
+.container-infor {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 1rem;
+  background: #232323;
+  color: #dbdbdb;
+}
+
+.container-infor h1 {
+  text-align: center;
+}
+
+.container-infor p {
+  text-align: justify;
+  margin: 24px 0;
+}
+
+.minha-classe {
+  display: none;;
+}
+
+.descricao{
+  color: #2eb274;
+}
+
+
+
+
+/* Animações */
+@keyframes keyimage {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes keyimageIMC {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+/* Style para tela acima de 900px */
 @media screen and (min-width: 900px) {
   .img-imc {
     max-width: 700px;
@@ -155,48 +203,4 @@
   .container-descricao{
     margin-bottom: 60px;
   }
-
-}
-
-@keyframes keyimage {
-  0% {
-    transform: translateX(100px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes keyimageIMC {
-  0% {
-    transform: translateX(-100px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.container-infor {
-  max-width: 900px;
-  margin: 0px auto;
-  padding: 1rem;
-  background: #232323;
-  color: #dbdbdb;
-}
-
-.container-infor h1 {
-  text-align: center;
-}
-
-.container-infor p {
-  text-align: justify;
-  margin: 24px 0;
-}
-
-.minha-classe {
-  display: none;;
-}
-
-.descricao{
-  color: #2eb274;
 }

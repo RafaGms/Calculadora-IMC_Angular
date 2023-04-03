@@ -5,9 +5,19 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
 body {
   background-color: rgb(5, 5, 5);
+}
+
+.divider {
+  height: 1px;
+  max-width: 500px;
+  width: 100%;
+  background: #7c7c7c;
+  margin: 2rem auto;
 }
