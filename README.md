@@ -1,5 +1,5 @@
 # Calculadora - IMC
-# Link para teste: https://rafagms.github.io/Calculadora-IMC_Angular/
+## Link para teste: https://rafagms.github.io/Calculadora-IMC_Angular/
 
 O Índice de Massa Corporal, mais conhecido como IMC, é uma medida utilizada para avaliar o peso corporal de uma pessoa em relação à sua altura. O cálculo do IMC é bastante simples e pode ser feito utilizando a fórmula matemática que relaciona o peso e a altura de um indivíduo.
 
